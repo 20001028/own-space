@@ -1,0 +1,136 @@
+/*
+    iconfont图标库
+*/
+@font-face {
+    font-family: "iconfont";
+    /* Project id 2566077 */
+    src: url('//at.alicdn.com/t/font_2566077_nufyat092ie.woff2?t=1625551147115') format('woff2'),
+        url('//at.alicdn.com/t/font_2566077_nufyat092ie.woff?t=1625551147115') format('woff'),
+        url('//at.alicdn.com/t/font_2566077_nufyat092ie.ttf?t=1625551147115') format('truetype');
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-shangchuan:before {
+    content: "\e618";
+}
+
+/*
+    FileTransfer Component
+*/
+.file-transfer-container {
+    display: flex;
+    position: absolute;
+    top: 5rem;
+    bottom: 0%;
+    width: 100%;
+    align-items: stretch;
+}
+
+/*
+    * Left-Nav-Bar Component
+*/
+.left-nav-bar{
+    display: flex;
+    flex-direction: column;
+    width: 14rem;
+    align-self: flex-start;
+    padding-top: 5rem;
+    margin-left: 5rem;
+    border-right: 1px solid #f1f2f4;
+    box-sizing: border-box;
+}
+
+.left-nav-item{
+    text-align: center;
+    height: 2.5rem;
+    line-height: 2.5rem;
+}
+
+.left-nav-item-selected{
+    background-color: #eef9fe;
+    color: #06a7ff;
+}
+
+/*
+    Dragger Component
+*/
+.file-dragger-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 80%;
+    border: 1px dashed #d9d9d9;
+    margin: auto;
+}
+
+.file-dragger-container:hover {
+    border: 1px dashed #409eff;
+}
+
+.file-dragger-container-over{
+    background-color: rgba(32, 159, 255, .06);
+    border:2px dashed #409eff;
+}
+
+.icon-upload{
+    font-size: 10rem;
+    color: #c0c4cc;
+}
+
+.file-dragger-detail{
+    margin-top: 2rem;
+    color: #c0c4cc;
+}
+
+.file-dragger-detail span{
+    margin-left: 16rem;
+    color: #606266;
+}
+
+.file-dragger-detail span a:hover{
+    color: #606266;
+}
+
+.file-uploader{
+    visibility: hidden;
+}
+
+.file-upload-text{
+    color: #409eff;
+    cursor: pointer;
+}
+
+.file-upload-text:hover{
+    color: #409eff !important;
+}
+
+/*
+    * File List Component
+*/
+.file-list-container{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    min-height: 1000px;
+}
+
+.file-control{
+    display: flex;
+    height: 2rem;
+}
+
+.file-control-item{
+    height: 100%;
+    width: 10rem;
+    line-height: 2rem;
+    text-align: center;
+}

@@ -1,0 +1,26 @@
+/*  
+    Home Component
+*/
+.home-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/*
+    Carousel Component
+*/
+.home-carousel-container{
+    width: 100%;
+    position: absolute;
+    top: 5rem;
+    bottom: 0%;
+}
+
+.carousel-first{
+    background: url('http://www.zaarapp.com/assets/images/b1.png') center top no-repeat fixed;
+}
+
+.carousel-second{
+    background: url('http://www.zaarapp.com/assets/images/b2.png') center top no-repeat fixed;
+}

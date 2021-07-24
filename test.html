@@ -1,0 +1,77 @@
+<html>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        .header{
+            height: 100px;
+            background-color: green;
+        }
+        .content{
+            background-color: gray;
+            bottom: 100px;
+            height: calc(100vh - 200px);
+            overflow: hidden;
+        }
+        .footer{
+            position: absolute;
+            height: 100px;
+            width: 100%;
+            bottom: 0%;
+            background-color: green;
+        }
+        .left,.middle,.right{
+            height: 100%;
+        }
+        .left,.right{
+            width: 30%;
+            background-color: orange;
+        }
+        .left{
+            position: relative;
+            top: calc(200px - 100vh);
+            width: 30%;
+            float: left;
+        }
+        .right{
+            top: calc(200px - 100vh);
+            position: relative;
+            margin-left: 40%;
+            float: left;
+        }
+        .middle{
+            float: left;
+            background-color: bisque;
+            width: 100%;
+        }
+    </style>
+    <body>
+        <div class="header">
+
+        </div>
+        <div class="content">
+            <div class="middle">
+
+            </div>
+            <div class="left">
+
+            </div>
+            <div class="right">
+
+            </div>
+        </div>
+        <div class="footer">
+
+        </div>
+    <script type="text/javascript">
+        window.onbeforeunload=function(){
+            alert('onbeforeunload');
+            localStorage.setItem('onbeforeunload','ok');
+        }
+        window.onunload=function(){
+            alert('onunload');
+        }
+    </script>
+    </body>
+</html>
